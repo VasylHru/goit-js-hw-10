@@ -7,17 +7,16 @@
     <title>timer</title>
     
     <script type="module" crossorigin src="/goit-js-hw-10/assets/vendor-77e16229.js"></script>
-    <script type="module" crossorigin src="/goit-js-hw-10/assets/1-timer-bfa52798.js"></script>
+    <script type="module" crossorigin src="/goit-js-hw-10/assets/1-timer-60d38fa5.js"></script>
     <link rel="stylesheet" href="/goit-js-hw-10/assets/vendor-7a007824.css">
-    <link rel="stylesheet" href="/goit-js-hw-10/assets/1-timer-10c40100.css">
+    <link rel="stylesheet" href="/goit-js-hw-10/assets/1-timer-4450ad62.css">
   </head>
   <body>
-    <section>
       <a href="./index.html">Go to home</a>
 
       <input type="text" id="datetime-picker" />
-      <button type="button" data-start>Start</button>
-
+      <button type="button" id="start-button" disabled>Start</button>
+    
       <div class="timer">
         <div class="field">
           <span class="value" data-days>00</span>
@@ -36,7 +35,8 @@
           <span class="label">Seconds</span>
         </div>
       </div>
-    </section>
-    
+      <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+      <script src="https://cdn.jsdelivr.net/npm/izitoast"></script>
+      
   </body>
 </html>
