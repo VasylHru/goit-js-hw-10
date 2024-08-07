@@ -25,77 +25,67 @@
 }
 
 
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f4f4f4;
+}
 .container {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+.timer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.field {
+  background: #f1f1f1;
+  border-radius: 8px;
+  padding: 10px;
   text-align: center;
 }
-.form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 20px;
-}
-input[type="number"] {
-  font-size: 1rem;
-  padding: 5px;
-  margin: 10px;
-  width: 100px;
-}
-fieldset {
-  border: none;
-  padding: 0;
-  margin: 10px;
-}
-legend {
-  font-weight: bold;
-}
-label {
-  margin: 5px 0;
+.value {
   display: block;
+  font-size: 2em;
+  margin: 0;
+}
+.label {
+  font-size: 0.8em;
+  color: #666;
+}
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: calc(100% - 22px);
+  box-sizing: border-box;
+  font-size: 1em;
 }
 button {
-  font-size: 1rem;
   padding: 10px 20px;
-  cursor: pointer;
-  border: none;
+  font-size: 1em;
+  color: #fff;
   background-color: #007bff;
-  color: white;
-  border-radius: 5px;
+  border: none;
+  border-radius: 4px;
+  margin-top: 10px;
+  cursor: pointer;
 }
 button:disabled {
-  background-color: #cccccc;
+  background-color: #ccc;
   cursor: not-allowed;
 }
-.snackbar {
-  visibility: hidden;
-  min-width: 250px;
-  margin: auto;
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  border-radius: 2px;
-  position: fixed;
-  z-index: 1;
-  left: 50%;
-  bottom: 30px;
-  transform: translateX(-50%);
-  font-size: 1rem;
-  padding: 16px;
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
-}
-.snackbar.show {
-  visibility: visible;
-  -webkit-animation: fadeInOut 3s ease-out;
-  animation: fadeInOut 3s ease-out;
-}
-@-webkit-keyframes fadeInOut {
-  0% { opacity: 0; }
-  20% { opacity: 1; }
-  80% { opacity: 1; }
-  100% { opacity: 0; }
-}
-@keyframes fadeInOut {
-  0% { opacity: 0; }
-  20% { opacity: 1; }
-  80% { opacity: 1; }
-  100% { opacity: 0; }
+button:hover {
+  background-color: #0056b3;
 }
