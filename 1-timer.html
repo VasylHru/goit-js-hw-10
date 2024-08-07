@@ -2,38 +2,48 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>timer</title>
+    <title>Countdown Timer</title>
     
-    <link rel="stylesheet" href="/goit-js-hw-10/assets/styles-7fa2879d.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/izitoast/dist/css/iziToast.min.css"
+    />
+    <link rel="stylesheet" href="/goit-js-hw-10/assets/styles-1eca1b41.css">
   </head>
   <body>
-      <a href="./index.html">Go to home</a>
+    <a href="./index.html">Back</a>
 
-      <input type="datetime-local" id="datetime-picker" />
-    <button type="button" data-start>Start</button>
+    <div class="container">
+      <input type="text" id="datetime-picker" />
+      <button type="button" data-start>Start</button>
 
-    <div class="timer">
+      <div class="timer">
         <div class="field">
-            <span class="value" data-days>00</span>
-            <span class="label">Days</span>
+          <span class="value" data-days>00</span>
+          <span class="label">Days</span>
         </div>
         <div class="field">
-            <span class="value" data-hours>00</span>
-            <span class="label">Hours</span>
+          <span class="value" data-hours>00</span>
+          <span class="label">Hours</span>
         </div>
         <div class="field">
-            <span class="value" data-minutes>00</span>
-            <span class="label">Minutes</span>
+          <span class="value" data-minutes>00</span>
+          <span class="label">Minutes</span>
         </div>
         <div class="field">
-            <span class="value" data-seconds>00</span>
-            <span class="label">Seconds</span>
+          <span class="value" data-seconds>00</span>
+          <span class="label">Seconds</span>
         </div>
+      </div>
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-    <script src="https://cdn.jsdelivr.net/npm/izitoast@1.4.0/dist/js/iziToast.min.js"></script>
-    <script src="1-timer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/izitoast/dist/js/iziToast.min.js"></script>
+    <script src="./js/1-timer.js"></script>
   </body>
 </html>
